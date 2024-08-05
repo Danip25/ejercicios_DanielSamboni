@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./js/scripts.js" defer></script>
+</head>
+<body class="bg-black flex flex-col justify-center items-center h-[100vh]" >
+    <h3 class="text-white text-5xl">Calculadora de bmi</h3>
+    <div class="flex flex-col xl w-[600px] h-[600px] bg-green-200 p-4 gap-4">
+        <form class="flex flex-col *:text-2xl gap-4" id="form">
+            <label for="weight">Peso</label>
+            <input type="number" class="rounded-md outline-none p-2" id="peso" step="any" required>
+            <label for="weight">altura</label>
+            <input type="number" class="rounded-md outline-none p-2" id="altura" step="any" required>
+            <button type="submit" class="bg-green-500 text-white font-bold rounded-md hover:bg-green-700 active:bg-green-900">calcular</button>
+        </form>
+        <span class="block flex-1 bg-white">
+            <h4 class="text-3xl font-bold text-center">resultado</h4>
+            <p class="text-7xl text-center" id="result">0.0</p>
+        </span>
+
+
+    </div>
+
+   
+    
+</body>
+</html>
